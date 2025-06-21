@@ -7,7 +7,6 @@ const Home = () => {
 	const[todos, setTodos]= useState([]);
 	const[nombre, setNombre] = useState("")
 	const[tarea, setTarea] = useState("");
-	const[id,setId]=useState("");
 	const getTodos = async () => {
 		let result = await fetch("https://playground.4geeks.com/todo/users/Hector");
 		let data = await result.json();
